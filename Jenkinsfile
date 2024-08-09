@@ -63,7 +63,7 @@ pipeline {
                     sh "cat ${HELM_CHART_PATH}/values.yaml"
                     
                     // Git configuration and status check
-                    sh "git config --global user.email 'akshay201@gmail.com'"
+                    sh "git config --global user.email 'akshaysunil201@gmail.com'"
                     sh "git config --global user.name 'akshayviola'"
                     sh "git status"
                     
