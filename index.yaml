@@ -8,6 +8,6 @@ entries:
     digest: f3835aac16e1c28cc74d9ae52296d1ae0a56690ebd36988d311f0c2e8af78cbf
     name: nodejs-app
     urls:
-    - https://github.com/raisalsalim/nodejs-app-helm-flux.git/nodejs-app-0.1.0.tgz
+    - https://github.com/akshayviola/flux-node-helm-chart-app.git/nodejs-app-0.1.0.tgz
     version: 0.1.0
 generated: "2024-08-07T12:21:41.058138959+05:30"
