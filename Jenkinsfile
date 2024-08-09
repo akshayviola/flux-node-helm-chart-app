@@ -2,9 +2,9 @@ pipeline {
     agent any
     environment {
         DOCKER_IMAGE = "raisalsalim/nodejs-app"
-        DOCKER_CREDENTIALS_ID = "docker-credentials"
-        GIT_CREDENTIALS_ID = "git-credentials"
-        GIT_REPO = "https://github.com/raisalsalim/nodejs-app-helm-flux.git"
+        DOCKER_CREDENTIALS_ID = "dockerhub-credentials"
+        GIT_CREDENTIALS_ID = "36ff0bcd-3a76-47d6-a5a7-7315f966b7ba"
+        GIT_REPO = "https://github.com/akshayviola/flux-node-helm-chart-app.git"
         HELM_CHART_PATH = "charts/nodejs-app"
         DOCKERFILE_PATH = "nodejs-app/Dockerfile"
         LOCAL_REGISTRY = "localhost:5000" // Local registry URL
@@ -68,7 +68,7 @@ pipeline {
                     sh "git status"
                     
                     withCredentials([usernamePassword(credentialsId: GIT_CREDENTIALS_ID, usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
-                        sh "git remote set-url origin https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/raisalsalim/nodejs-app-helm-flux.git"
+                        sh "git remote set-url origin https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/akshayviola/flux-node-helm-chart-app"
                         sh "git add ${HELM_CHART_PATH}/values.yaml"
                         sh "git status"
                         sh "git commit -m '[JENKINS] Update Helm chart image tag to ${env.BUILD_ID}'"

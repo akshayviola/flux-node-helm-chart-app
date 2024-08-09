@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  url: https://github.com/raisalsalim/nodejs-app-helm-flux.git
+  url: https://github.com/akshayviola/flux-node-helm-chart-app.git
   ref:
     branch: main
   secretRef:

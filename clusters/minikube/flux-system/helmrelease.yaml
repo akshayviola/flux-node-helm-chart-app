@@ -17,5 +17,5 @@ spec:
       interval: 1m
   values:
     image:
-      repository: raisalsalim/nodejs-app
+      repository: akshay2001a/nodejs-app
       tag: latest

@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/raisalsalim/nodejs-app-helm-flux
+  url: ssh://git@github.com/akshayviola/flux-node-helm-chart-app
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

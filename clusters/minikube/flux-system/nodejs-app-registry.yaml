@@ -5,5 +5,5 @@ metadata:
   name: nodejs-app
   namespace: flux-system
 spec:
-  image: raisalsalim/nodejs-app
+  image: akshay2001a/nodejs-app
   interval: 5m0s
