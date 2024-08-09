@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "raisalsalim/nodejs-app"
+        DOCKER_IMAGE = "akshay2001a/nodejs-app"
         DOCKER_CREDENTIALS_ID = "dockerhub-credentials"
         GIT_CREDENTIALS_ID = "36ff0bcd-3a76-47d6-a5a7-7315f966b7ba"
         GIT_REPO = "https://github.com/akshayviola/flux-node-helm-chart-app.git"
@@ -63,8 +63,8 @@ pipeline {
                     sh "cat ${HELM_CHART_PATH}/values.yaml"
                     
                     // Git configuration and status check
-                    sh "git config --global user.email 'raisalsalim333@gmail.com'"
-                    sh "git config --global user.name 'raisalsalim'"
+                    sh "git config --global user.email 'akshay201@gmail.com'"
+                    sh "git config --global user.name 'akshayviola'"
                     sh "git status"
                     
                     withCredentials([usernamePassword(credentialsId: GIT_CREDENTIALS_ID, usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
