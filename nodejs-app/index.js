@@ -8,10 +8,10 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <title>akshay</title>
+      <title>akshay.node.app</title>
     </head>
     <body>
-      <h1>Hello World!!! haii.. </h1>
+      <h1>Everything works !! </h1>
     </body>
     </html>
   `);
