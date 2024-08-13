@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
       <title>akshay.node.app</title>
     </head>
     <body>
-      <h1>Everything works !! </h1>
+      <h1>Everything works!!, Hello from argocd </h1>
     </body>
     </html>
   `);
